@@ -1,0 +1,25 @@
+{
+    "version": "0.1.1",
+    "description": "Self-hostable Anthropic usage and environmental-impact dashboard.",
+    "homepage": "https://github.com/RobarePruyn/tokenscale",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/RobarePruyn/tokenscale/releases/download/v0.1.1/tokenscale-cli-x86_64-pc-windows-msvc.zip",
+            "hash": "sha256:7aa700e2b62c6531ace80f487a037677b7ada2184e42c03dc8cb578fbd76f716"
+        }
+    },
+    "bin": "tokenscale.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/RobarePruyn/tokenscale/releases/download/v$version/tokenscale-cli-x86_64-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/RobarePruyn/tokenscale/releases/download/v$version/tokenscale-cli-x86_64-pc-windows-msvc.zip.sha256",
+            "regex": "(?<sha>[a-f0-9]{64})"
+        }
+    }
+}
