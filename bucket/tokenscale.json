@@ -10,6 +10,25 @@
         }
     },
     "bin": "tokenscale.exe",
+    "notes": [
+        "tokenscale is installed. To start the local dashboard:",
+        "",
+        "  tokenscale serve",
+        "",
+        "That binds http://127.0.0.1:8787 and runs the auto-scan loop.",
+        "",
+        "To run as a Windows service (auto-starts on boot), the easiest path",
+        "is via NSSM:",
+        "",
+        "  scoop install nssm",
+        "  nssm install tokenscale \"$env:USERPROFILE\\scoop\\apps\\tokenscale\\current\\tokenscale.exe\" serve",
+        "  nssm start tokenscale",
+        "",
+        "Then open: http://127.0.0.1:8787",
+        "",
+        "Config (created on first run):",
+        "  %APPDATA%\\tokenscale\\config.toml"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
